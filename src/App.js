@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './components/header/Header';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           </Route>
           {/* This is the default route */}
           <Route path='/'>
+            <Header />
             <h1>Amazon Clone Home Page 🚀</h1>
           </Route>
         </Switch>
