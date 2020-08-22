@@ -3,6 +3,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/header/Header';
+import Home from './components/home/Home';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className='app'>
         <Switch>
           <Route path='/checkout'>
+            <Header />
             <h1>Checkout</h1>
           </Route>
           <Route path='/login'>
@@ -18,7 +20,7 @@ function App() {
           {/* This is the default route */}
           <Route path='/'>
             <Header />
-            <h1>Amazon Clone Home Page 🚀</h1>
+            <Home />
           </Route>
         </Switch>
       </div>
