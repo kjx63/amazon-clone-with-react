@@ -1,6 +1,15 @@
 export const initialState = {
   // basket: ['Bread', 'Chiken'], // basket.length == 2 (at the bottom of the Header.js)
-  basket: [],
+  basket: [
+    {
+      id: '32456367',
+      title:
+        'Apple iPad Pro (11-inch, Wi-Fi, 64GB) - Space Gray (Latest Model) (Renewed)',
+      price: 598.99,
+      rating: 5,
+      image: 'https://m.media-amazon.com/images/I/81wV6umwpZL._AC_UY218_.jpg',
+    },
+  ],
   user: null,
 };
 
