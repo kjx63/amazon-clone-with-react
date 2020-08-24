@@ -1,3 +1,5 @@
+# Amazon Clone with React
+
 Live Demo:
 ----------------
 - https://clone-599cf.web.app
