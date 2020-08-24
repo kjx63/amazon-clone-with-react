@@ -1,23 +1,6 @@
 export const initialState = {
   // basket: ['Bread', 'Chiken'], // basket.length == 2 (at the bottom of the Header.js)
-  basket: [
-    // {
-    //   id: '32456367',
-    //   title:
-    //     'Apple iPad Pro (11-inch, Wi-Fi, 64GB) - Space Gray (Latest Model) (Renewed)',
-    //   price: 598.99,
-    //   rating: 5,
-    //   image: 'https://m.media-amazon.com/images/I/81wV6umwpZL._AC_UY218_.jpg',
-    // },
-    // {
-    //   id: '39487573',
-    //   title:
-    //     'Apple iPad Pro (11-inch, Wi-Fi, 64GB) - Space Gray (Latest Model) (Renewed)',
-    //   price: 598.99,
-    //   rating: 5,
-    //   image: 'https://m.media-amazon.com/images/I/81wV6umwpZL._AC_UY218_.jpg',
-    // },
-  ],
+  basket: [],
   user: null,
 };
 
@@ -28,6 +11,12 @@ const reducer = (state, action) => {
   console.log(action);
 
   switch (action.type) {
+    case 'SET_USER':
+      return {
+        ...state,
+        // set the user to whatever the action.user was
+        user: action.user,
+      };
     case 'ADD_TO_BASKET':
       // Logic for adding item to basket
       // return the new layer of data
